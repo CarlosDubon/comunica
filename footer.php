@@ -44,6 +44,7 @@
 <script src="<?php bloginfo('template_url') ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/dinamic-bar.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/extras.js"></script>
+<script src="<?php bloginfo('template_url') ?>/assets/js/effects.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/jquery.slides.js"></script>
 <script>
 $(function(){

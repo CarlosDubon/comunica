@@ -1,11 +1,14 @@
 /*EFECTO PARALLAX SCROLLING*/
 
 /*Contenedor con imagen para efecto parallax*/
-.section {
-    width: 540px;
-    height: 500px;
+.fondo-parallax{
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.section .inner {
-    width: 540px;
-    height: 500px;
+.movimiento-arriba{
+    position: fixed;
+    background-attachment: fixed;
 }
