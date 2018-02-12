@@ -129,6 +129,16 @@ ul.drak-ul-footer > li:hover{
     color: #fff;
     text-decoration: none;
 }
+
+.link-darknav:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-darknav:link{
+    color: #fff;
+    text-decoration: none;
+}
 .dark-blue-nav-scrolling{
     display: none;
     background: #072844;
