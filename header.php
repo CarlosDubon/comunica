@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/bootstrap-grid.min.css">
     <?php wp_head(); ?> 
 </head>
-<body>
+<body <?php
+        if(!is_home()){
+            echo 'onload="pageimage();"';
+        }
+      ?>>
     <div class="logo-container" style="background-image: url('<?php echo get_header_image(); ?>')">
     </div>
     <!--Barra de barra de navegación principal-->
@@ -21,7 +25,7 @@
             'theme_location'=>'secciones',
             'container'=>'div',
             'container_class'=>'section-containers',
-            'items_wrap'=>'<ul class="drak-ul"> <li class="home-link"><a href="'.home_url().'">INICIO</a></li>%3$s</ul>'
+            'items_wrap'=>'<ul class="drak-ul" id="home"> <li class="home-link"><a href="'.home_url().'#home">INICIO</a></li>%3$s</ul>'
 
         ));
         ?>
