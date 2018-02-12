@@ -41,7 +41,7 @@ a:hover{
     font-size: 1.1em;
 }
 .section-containers{
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
@@ -119,7 +119,7 @@ ul.drak-ul-footer > li:hover{
     height: calc(100vh - 111px);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
 }
 .link-darknav{
     text-decoration: none;
@@ -470,7 +470,8 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
 .home-link {
     display: inline-block;
     color: white;
-    margin-right: 30%;
+    margin-right: 20%;
+    margin-left: 5%;
 }
 .home-link > a {
     color: white;
