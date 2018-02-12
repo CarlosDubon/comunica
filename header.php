@@ -21,7 +21,7 @@
             'theme_location'=>'secciones',
             'container'=>'div',
             'container_class'=>'section-containers',
-            'items_wrap'=>'<ul class="drak-ul"> <li class="home-link"><a>INICIO</a></li>%3$s</ul>'
+            'items_wrap'=>'<ul class="drak-ul"> <li class="home-link"><a href="'.home_url().'">INICIO</a></li>%3$s</ul>'
 
         ));
         ?>
