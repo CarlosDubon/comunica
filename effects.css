@@ -1,3 +1,11 @@
 /*EFECTO PARALLAX SCROLLING*/
 
 /*Contenedor con imagen para efecto parallax*/
+.section {
+    width: 540px;
+    height: 500px;
+}
+.section .inner {
+    width: 540px;
+    height: 500px;
+}
