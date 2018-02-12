@@ -29,7 +29,10 @@
     <div class="container-fluid">
         <div class="row">
         <?php
-            $items = wp_get_nav_menu_items('secciones');
+            $theme_locations = get_nav_menu_locations();
+            $menu_obj = get_term( $theme_locations['secciones'], 'nav_menu' );
+            $menu_name = $menu_obj->name;
+            $items = wp_get_nav_menu_items($menu_name);
             for($i=0;$i<count($items);$i++){
                         $flag = true;
                         if ( have_posts() ) {
