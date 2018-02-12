@@ -116,10 +116,10 @@ ul.drak-ul-footer > li:hover{
     font-size: 40px;
 }
 .logo-container{
-    height: 200px;
+    height: calc(100vh - 111px);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 50% 3%;
+    background-position:center;
 }
 .link-darknav{
     text-decoration: none;
