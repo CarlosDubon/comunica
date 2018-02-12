@@ -59,7 +59,7 @@ rsort($total_views);
                     while ( have_posts() ) {
                         the_post();
                          $post_views = get_post_views(get_the_ID());
-                            if($post_views < $total_views[0]){
+                            if($post_views != $total_views[0] ){
                                 if($counter < 2){?>
                                <div class=" col-md-6">
                                 <div class="card bg-secondary mb-3">
