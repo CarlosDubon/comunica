@@ -19,12 +19,13 @@ rsort($total_views);
         <div class="row">
             <div class="col-lg-6">
                 <?php 
-
+                $count_views=0;
                 if ( have_posts() ) {
                     while ( have_posts() ) {
                         the_post();
                          $post_views = get_post_views(get_the_ID());
-                            if($post_views == $total_views[0]){?>
+                            if($post_views == $total_views[0] && $count_views == 0){
+                                $count_views++;?>
                            
                                <div class="container-post">
                                     <?php
