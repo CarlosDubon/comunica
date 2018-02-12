@@ -121,7 +121,7 @@ ul.drak-ul-footer > li:hover{
     font-size: 40px;
 }
 .logo-container{
-    height: calc(100vh - 111px);
+    height: calc(100vh - 81px);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
