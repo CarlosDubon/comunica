@@ -165,7 +165,7 @@ rsort($total_views);
                 while ( have_posts() ) {
                 the_post();
                 if(in_category('Multimedia')){
-                    if($posCount<2){
+                    if($posCount<3){
             ?>
                    <div class="col-md-6">
                         <div class="card text-white bg-primary mb-3">
