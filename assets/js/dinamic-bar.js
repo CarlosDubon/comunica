@@ -3,7 +3,7 @@ $(document).ready(main);
 function main(){
 var $counter = true;
     
-
+    
     
     $(window).scroll(function(){
        var positionNav = $('.dark-blue-nav').offset().top + $('.dark-blue-nav').outerHeight();
@@ -53,9 +53,21 @@ var $counter = true;
         $clase = $(this).text().split(" ").join("_");
         if($('.'+$clase).is(':hidden')){
             $('.'+$clase).slideDown('fast');
+            $(this).parent('li').css('background','rgb(28, 66, 109)');
         }else{
             $('.'+$clase).slideUp('fast');
+            $(this).parent('li').css('background','#072844');
         }
     }); 
     
+}
+
+function pageimage(){
+    
+
+    $(document).ready(function() {
+        console.log('TPM');
+        $(document).scrollTop($('#first-nav').offset().top);
+    });
+
 }
