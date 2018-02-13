@@ -90,9 +90,13 @@ function getImage($num) {
 function getYTurl(){
     $content= get_the_content();
     $begin = strpos($content,'v=');
-    $cont = substr($content,$begin);
-    $end = strpos($cont,'<');
-    $link = substr($cont,2,$end-2);
+    if($begin != false){
+        $cont = substr($content,$begin);
+        $end = strpos($cont,'<');
+        $link = substr($cont,2,$end-2);
+    }else{
+        $link = '';
+    }
     //$test = preg_replace('/</','/',$link);
     return $link;
 }
