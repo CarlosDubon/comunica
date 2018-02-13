@@ -3,7 +3,6 @@
 /*Contenedor con imagen para efecto parallax*/
 .fondo-parallax{
     background-attachment: fixed;
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,5 +14,4 @@
 .sin-magenes{
     margin: 0 !important;
     padding: 0 !important;
-    width: 100% !important;
 }
