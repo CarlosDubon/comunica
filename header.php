@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/Lux.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/effects.css">
+    
     <?php wp_head(); ?> 
 </head>
 <body <?php
@@ -38,6 +39,7 @@
             $menu_obj = get_term( $theme_locations['secciones'], 'nav_menu' );
             $menu_name = $menu_obj->name;
             $items = wp_get_nav_menu_items($menu_name);
+            query_posts('');
             for($i=0;$i<count($items);$i++){
                         $flag = true;
                         if ( have_posts() ) {
@@ -72,6 +74,7 @@
                             } // end while
                         } // end if
             }
+            wp_reset_query();
         ?>
         </div>
     </div>
