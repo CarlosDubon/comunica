@@ -121,10 +121,10 @@ ul.drak-ul-footer > li:hover{
     font-size: 40px;
 }
 .logo-container{
-    height: calc(100vh - 44px);
+    height: 200px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 2%;
 }
 
 /*BOTON DE DESPLAZAMIENTO*/
