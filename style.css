@@ -130,6 +130,7 @@ ul.drak-ul-footer > li:hover{
 /*BOTON DE DESPLAZAMIENTO*/
 
 .arrow-down{
+    margin: 0;
     width: 100%;
     color: white!important;
     text-align: center;
