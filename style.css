@@ -121,11 +121,27 @@ ul.drak-ul-footer > li:hover{
     font-size: 40px;
 }
 .logo-container{
-    height: calc(100vh - 81px);
+    height: calc(100vh - 44px);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/*BOTON DE DESPLAZAMIENTO*/
+
+.arrow-down{
+    width: 100%;
+    color: white!important;
+    text-align: center;
+    padding: 10px;
+    background: rgba(7, 40, 68, 0.7);
+    transition: all 500ms ease;
+}
+
+.arrow-down:hover{
+    background: #072844;
+}
+
 .link-darknav{
     text-decoration: none;
     color: #fff;

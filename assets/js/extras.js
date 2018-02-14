@@ -18,18 +18,30 @@ function main(){
        
     });
     
+    $('.arrow-down').click(function(){
+        var homeP = $('#first-nav').offset().top;
+        $('html, body').animate({
+           scrollTop: homeP 
+        }, 'slow');
+    });
+    
+    $('.prevent').click(function(event){
+        event.preventDefault();
+    });
+    
     $counter = 0;
     $(window).scroll(function(){
         var Position = window.scrollY;
-        if(Position>1){
+        if(Position>$('#first-nav').offset().top){
             $('.ScrollUp').fadeIn('fast');
         }else{
            $('.ScrollUp').fadeOut('fast'); 
         }
     });
     $('.ScrollUp').click(function(){
+        var homeP = $('#first-nav').offset().top;
         $('html, body').animate({
-           scrollTop:0 
+           scrollTop:homeP 
         }, 'slow');
     });
     

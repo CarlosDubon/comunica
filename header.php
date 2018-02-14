@@ -19,6 +19,10 @@
       ?>>
     <div class="logo-container" style="background-image: url('<?php echo get_header_image(); ?>')">
     </div>
+    
+    <!-- Barra de dezplazamiento inicial -->
+    <a class="prevent"><h1 class="arrow-down"><span class=" glyphicon glyphicon-chevron-down" aria-hidden="true"></span></h1></a>
+    
     <!--Barra de barra de navegación principal-->
     <nav class="dark-blue-nav" id="first-nav">
         
