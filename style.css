@@ -504,6 +504,12 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
     clear: both;
 }
 
-.box_read_more {
-    background: rgba(0, 0, 0, 0.45) !important;
+/*ESTILO DEL SEPARADOR DE NOTICIAS*/
+
+.last_entrees{
+    padding: 15px!important;
+    border-left: 20px solid #072844!important;
+    background: rgba(7, 40, 68, 0.8)!important;
+    font-weight: bolder;
+    color: white !important; 
 }

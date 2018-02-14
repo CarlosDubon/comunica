@@ -14,6 +14,10 @@
         } // end if
         ?>
         
+        <br>
+        <br>
+        <h1 class="last_entrees">ÚLTIMAS ENTRADAS</h1>
+        <br>
         <!-- Noticias relacionadas con la pagina -->
         <div class="row">
         <?php
