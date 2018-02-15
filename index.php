@@ -8,8 +8,8 @@ if ( have_posts() ) {
 		$view_per_post =  get_post_views(get_the_ID());
         $total_views[] =  $view_per_post;
 	} // end while
+    rsort($total_views);
 } // end if
-rsort($total_views);
 //print_r($attachments );
 ?>
 

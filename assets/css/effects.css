@@ -18,3 +18,22 @@
     margin: 0 !important;
     padding: 0 !important;
 }
+
+/*EFECTO PARALLAX 3D 404 ERROR*/
+.cd-background-wapper {
+    overflow:hidden;
+    perspective: 4000px;
+}
+
+.cd-floating-background {
+    transform-style: preserve-3d;
+}
+
+.cd-floating-background img:first-child {
+    width: 100%;
+    transform: translateZ(50px);
+}
+.cd-floating-background img:nth-child(2) {
+    width: 100%;
+    transform: translateZ(290px);
+}
