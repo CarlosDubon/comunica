@@ -20,20 +20,19 @@
 }
 
 /*EFECTO PARALLAX 3D 404 ERROR*/
-.cd-background-wapper {
-    overflow:hidden;
-    perspective: 4000px;
+#simple3D {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 900px;
 }
-
-.cd-floating-background {
-    transform-style: preserve-3d;
+#simple3D div {
+  min-height: 1100px;
+  width: 120%;
 }
-
-.cd-floating-background img:first-child {
-    width: 100%;
-    transform: translateZ(50px);
+#simple3D div.dot {
+  background: url(../images/bg1.png);
 }
-.cd-floating-background img:nth-child(2) {
-    width: 100%;
-    transform: translateZ(290px);
-}
+#simple3D div.kinoco {
+  background: url(../images/search.png);
+}	
