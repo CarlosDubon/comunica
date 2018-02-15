@@ -59,14 +59,23 @@
   -ms-transform: translateZ(50px);
   transform: translateZ(50px);
     width: 100%;
+    height: 70vh;
 }
 .cd-floating-background img:nth-child(2) {
   -webkit-transform: translateZ(290px);
   -ms-transform: translateZ(290px);
   transform: translateZ(290px);
+    width: 40%;
+    top: 50%;
+    left: 30%;
+}
+.cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(400px);
     width: 10%;
-    left: 45%;
-    top: 40%;
+    top: 20%;
+    left: 40%;
 }
 .no-preserve-3d .cd-floating-background {
   /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
