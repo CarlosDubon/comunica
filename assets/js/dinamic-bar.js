@@ -58,7 +58,23 @@ var $counter = true;
             $('.'+$clase).slideUp('fast');
             $(this).parent('li').css('background','#072844');
         }
-    }); 
+    });
+    
+    $("#first-nav > div > ul > li > ul > li > .link-darknav").click(function(event) {
+      event.preventDefault();
+    });
+    
+    $("#first-nav > div > ul > li > ul > li > .link-darknav").click(function(){
+        $clase = $(this).text().split(" ").join("_");
+        if($('.'+$clase).is(':hidden')){
+            $('.'+$clase).slideDown('fast');
+            $(this).parent('li').css('background','rgb(28, 66, 109)');
+        }else{
+            $('.'+$clase).slideUp('fast');
+            $(this).parent('li').css('background','#072844');
+        }
+    });
+    
     
 }
 
