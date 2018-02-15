@@ -20,19 +20,55 @@
 }
 
 /*EFECTO PARALLAX 3D 404 ERROR*/
-#simple3D {
+.cd-background-wrapper {
+  background-color: #001426;
+  position: relative;
+  overflow: hidden;
+  -webkit-perspective: 4000px;
+  perspective: 4000px;
+}
+
+.cd-floating-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.cd-floating-background.is-absolute {
   position: absolute;
-  z-index: 1;
+}
+.cd-floating-background img {
+  display: block;
   width: 100%;
-  height: 900px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* fixes a Firefox bug - images not correctly rendered*/
+  background-color: rgba(255, 255, 255, 0.01);
 }
-#simple3D div {
-  min-height: 1100px;
-  width: 120%;
+.cd-floating-background img:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#simple3D div.dot {
-  background: url(../images/bg1.png);
+.cd-floating-background img:first-child {
+  -webkit-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  transform: translateZ(50px);
+    width: 100%;
 }
-#simple3D div.kinoco {
-  background: url(../images/search.png);
+.cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  transform: translateZ(290px);
+    width: 10%;
+    left: 45%;
+    top: 40%;
+}
+.no-preserve-3d .cd-floating-background {
+  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
+  position: relative;
 }	

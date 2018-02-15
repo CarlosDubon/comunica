@@ -2,23 +2,14 @@
 get_header();
 ?>
 <div class="content-fluid">
-    <section class="content-main">
-        <div id="simple3D">
-            <div class="dot"></div>
-            <div class="kinoco"></div>
-	    </div>
-    </section>
+        <div class="cd-background-wrapper">
+            <figure class="cd-floating-background">
+                <img src="<?php bloginfo('template_url') ?>/assets/images/bg1.jpg" alt="image-1">
+                <img src="<?php bloginfo('template_url') ?>/assets/images/search.png" alt="image-2">
+
+            </figure>
+	</div>
 </div>
-<script>
-$("#simple3D").simple3D({
-moveX:3, // 1 - 5
-moveY:3, // 1 - 5
-bgImage:true, // use background image mode
-targetAll:true,
-reverseX: true,
-reverseY: true
-});
-</script>
 <?php
 get_footer();
 ?>

@@ -46,7 +46,8 @@
 <script src="<?php bloginfo('template_url') ?>/assets/js/extras.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/effects.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/jquery.slides.js"></script>
-<script src="<?php bloginfo('template_url') ?>/assets/js/jquery.simple3D.min.js"></script>
+<script src="<?php bloginfo('template_url') ?>/assets/js/jquery-2.1.1.js"></script>
+<script src="<?php bloginfo('template_url') ?>/assets/js/main.js"></script>
 <script>
 $(function(){
   $("#slideshow").slidesjs({
