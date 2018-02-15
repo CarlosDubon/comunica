@@ -10,6 +10,10 @@
 .movimiento-arriba{
     position: fixed;
 }
+.movimiento-abajo{
+    position: fixed;
+}
+
 .sin-magenes{
     margin: 0 !important;
     padding: 0 !important;
