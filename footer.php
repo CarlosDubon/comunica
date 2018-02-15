@@ -62,7 +62,12 @@ if(is_front_page()){ ?>
 $(function(){
   $("#slideshow").slidesjs({
     height: 370,
-    navegation: false
+    navegation: false,
+    play:{
+        interval: 5000,
+        auto:true,
+        restartDelay: 2500
+    }
   });
 });
 </script>
