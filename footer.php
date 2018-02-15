@@ -40,14 +40,24 @@
 <?php wp_footer();?>
 </body>
 </html>
-<script src="<?php bloginfo('template_url') ?>/assets/js/jquery.min.js"></script>
+
+<?php
+if(is_front_page()){ ?>
+    <script src="<?php bloginfo('template_url') ?>/assets/js/jquery.min.js"></script>    
+<?php
+}else{ ?>
+    <script src="<?php bloginfo('template_url') ?>/assets/js/jquery-2.1.1.js"></script>        
+<?php } ?>
+
+
 <script src="<?php bloginfo('template_url') ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/dinamic-bar.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/extras.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/effects.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/jquery.slides.js"></script>
-<script src="<?php bloginfo('template_url') ?>/assets/js/jquery-2.1.1.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/main.js"></script>
+
+
 <script>
 $(function(){
   $("#slideshow").slidesjs({
