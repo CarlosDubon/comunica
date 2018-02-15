@@ -36,7 +36,7 @@ if ( have_posts() ) {
                                         
                                       <div class="top-right">
                                           <span class="glyphicon glyphicon-eye-open" style="margin-right:5px" aria-hidden="true"></span>
-                                          <?php echo sprintf( _n( '%s Visualización', '%s Visualizaciones', $post_views, 'your_textdomain' ), $post_views );?>
+                                          <?php echo sprintf( _n( '%s Visualización', '%s Visualizaciones', $post_views, 'your_textdomain' ), parseViews($post_views) );?>
                                       </div>
                                       <div class="bottom-right">
                                         <h3 style="color:#fff"><?php the_title(); ?></h3>
@@ -72,7 +72,7 @@ if ( have_posts() ) {
 
                                           <div class="top-right">
                                               <span class="glyphicon glyphicon-eye-open" style="margin-right:5px" aria-hidden="true"></span>
-                                              <?php echo sprintf( _n( '%s Visualización', '%s Visualizaciones', $post_views, 'your_textdomain' ), $post_views );?>
+                                              <?php echo sprintf( _n( '%s Visualización', '%s Visualizaciones', $post_views, 'your_textdomain' ), parseViews($post_views) );?>
                                           </div>
                                     </div>
                                     <div class="toggle-trigger">

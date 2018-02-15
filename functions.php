@@ -109,6 +109,21 @@ function nameToUrl($name){
     
     return $wospace;
 }
+
+function parseViews($views){
+    $view= (int)$views;
+    
+    if($view < 999){
+        return $view;
+    }else if($view < 999999 && $view >1000){
+        $view= round($view/1000);
+        return $view.'k';
+    }else{
+        $view= round($view/1000000);
+        return $view.'M';
+    }
+}
+
 ?>
 
 
