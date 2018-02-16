@@ -119,7 +119,7 @@ if ( have_posts() ) {
                                     the_post_thumbnail('post-thumbnails',array('class'=>'slider-hght'));
                                   }
                                 ?>
-                              <div class="card-body text-dark">
+                              <div class="card-body text-dark w-sr" id="style-7">
                                 <p class="card-text"><?php the_excerpt(); ?></p>
                                 <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Leer Más</a>
                               </div>
@@ -137,7 +137,7 @@ if ( have_posts() ) {
                                         the_post_thumbnail('post-thumbnails',array('class'=>'slider-hght'));
                                       }
                                     ?>
-                                  <div class="card-body text-dark">
+                                  <div class="card-body text-dark w-sr" id="style-7">
                                     <p class="card-text"><?php the_excerpt(); ?></p>
                                     <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Leer más</a>
                                   </div>
