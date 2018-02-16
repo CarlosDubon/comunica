@@ -93,7 +93,11 @@ function getYTurl(){
     if($begin != false){
         $cont = substr($content,$begin);
         $end = strpos($cont,'<');
-        $link = substr($cont,2,$end-2);
+        if(empty($end)){
+            $link = substr($cont,2);
+        }else{
+           $link = substr($cont,2,$end-2);
+        }        
     }else{
         $link = '';
     }
