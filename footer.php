@@ -23,14 +23,13 @@
            'items_wrap'=>'<ul class="ul-social">%3$s</ul>'
             ));
         ?>
-        <form role="search" method="get" class="form-inline" action="<?php echo home_url( '/' ); ?>">
-            <input type="search" style="width:70%" class="form-control" placeholder="<?php echo esc_attr_x( 'Buscar', 'placeholder' ) ?>"
-                    value="<?php echo get_search_query() ?>" name="search"
-                    title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-            <input type="submit" style="width:25%" class="btn btn-primary"
-                value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
-        </form>
-       
+        <!--FORMULARIO DE BUSQUEDA-->
+        <div class="ft-search">
+        
+           <?php get_search_form(); ?>
+            
+        </div>
+                                            
    </div>
 </div>
 <div class="ScrollUp btn btn-secondary">

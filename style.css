@@ -575,3 +575,80 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
     font-weight: bolder;
     color: white !important; 
 }
+
+/*ESTILO DEL LA BARRA DE BUSQUEDA*/
+
+
+.ft-search span{
+    display:none;
+}
+
+.ft-search label{
+    width: 60%;
+}
+
+.ft-search label input{
+    width: 100%;
+    height: 30px;
+}
+
+/*ESTILO DE LA PAGINA DE BUSQUEDA*/
+
+.search_page_div{
+    margin-top: 2.5%;
+}
+
+.search_page_div form{
+    text-align: center;
+}
+
+.search_page_div form label span{
+    display: none;
+}
+
+.search_page_div form label{
+    width: 70%;
+}
+
+.search_page_div form label input{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.search_page_div form .search-btn{
+    vertical-align: top;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5em !important;
+}
+
+.search-btn{
+    transition: all 500ms ease;
+}
+
+.search-btn:hover{
+    background: #0e4b80!important;
+}
+
+.none_results{
+    width: 100%;
+    height: 90vh;
+    display: table;
+}
+
+.none_results h1{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.none_results .inside{
+    color: red!important;
+    font-size: 1em;
+}
+
+.none_results span{
+    text-transform: uppercase;
+}
