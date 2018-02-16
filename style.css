@@ -286,21 +286,24 @@ ul.menu-scrolling > li > a:hover{
 .box {
   position:relative;
   vertical-align: middle;
-  color: #fff;
+  color: white;
+    background: rgba(0, 0, 0, 0.3);
   display: inline-block;
-  height: 60px;
+  height: 60px; 
   line-height: 60px;
   text-align: center;
   transition: 0.5s;
   padding: 0 10px;
   cursor: pointer;
   border: 2px solid rgba(0,0,0,0);
+    border-radius: 7px;
   -webkit-transition:0.5s;
 }
 
 .box:hover {
   border: 2px solid rgba(0,160,80,0);
   color: #FFF;
+    background: rgba(62, 62, 62, 0.81);
 }
 
 .box::before, .box::after {
@@ -400,9 +403,6 @@ ul.menu-scrolling > li > a:hover{
     height: 350px;
     filter:blur(0px);
     transition: all 500ms ease;
-}
-img-responsive{
-    width: 100%;
 }
 .container-slide:hover > .display-slide{
     display: none;
@@ -635,7 +635,9 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
 .search_page_div form label input{
     width: 100%;
     padding: 5px;
-    font-size: 1.5em;
+    font-size: 1.5em ;
+    color: black !important;
+    font-family: Copper-Medium;
 }
 
 .search_page_div form .search-btn{
