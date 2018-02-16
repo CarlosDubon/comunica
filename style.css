@@ -574,7 +574,6 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
     color: white !important; 
 }
 
-<<<<<<< HEAD
 .w-sr {
     overflow-y: scroll;
     height: 200px;
@@ -597,7 +596,7 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
 {
 	border-radius: 0px;
     background:#072844;
-=======
+}
 /*ESTILO DEL LA BARRA DE BUSQUEDA*/
 
 
@@ -673,5 +672,4 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
 
 .none_results span{
     text-transform: uppercase;
->>>>>>> 9441549623875f6a3e31759151ac832297f72aae
 }
