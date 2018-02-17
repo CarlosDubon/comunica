@@ -32,9 +32,10 @@ get_header();
                     
                     <div class="result_panel">
                         <h1>Mostrando resultados para: <span class="inside"><?php the_search_query() ?></span></h1>
-                        <h3>Cantidad de resultados: <?php echo $result_cont; ?> </h3>
+                        <span>Cantidad de resultados: <?php echo $result_cont; ?> </span>
                         <div class="result_panel_posts">
                             <?php
+                        $post_views = get_post_views(get_the_ID());
                             while(have_posts()){
                                 the_post();
                                 $post=get_post();
@@ -47,12 +48,15 @@ get_header();
                                                     <?php
                                                         if ( has_post_thumbnail() ) {
                                                         the_post_thumbnail('post-thumbnails',array('class'=>'img-responsive result_image'));
-                                                    }?>
+                                                    }?>>
                                                 </div>
                                                 <div class="col-8 result_content">
                                                        <h1><?php the_title(); ?></h1>
                                                        <p><?php the_excerpt(); ?></p>
+                                                       <p><span class="glyphicon glyphicon-eye-open" style="margin-right:6px" aria-hidden="true"></span>
+                                                          <?php echo sprintf( _n( '%s Visualización', '%s Visualizaciones', $post_views, 'your_textdomain' ), parseViews($post_views) );?></p>
                                                         <a href="<?php the_permalink();?>" class="btn btn-info">Leer Más <span class="glyphicon glyphicon-chevron-right" style="font-weight: 100" aria-hidden="true"></span></a>
+                                                        <p><small class="text-muted"><?php echo get_the_date(); ?> - <?php the_time();?> / <?php the_author() ?> / <?php the_category(','); ?></small></p>
                                                 </div>
                                             </div>
                                         </div>

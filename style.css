@@ -134,7 +134,6 @@ ul.sub-menu li a{
     text-align: center;
 }
 ul.ul-social > li{
-    padding: 10px;
     display: inline-block;
 }
 ul.ul-social > li:hover{
@@ -287,7 +286,6 @@ ul.menu-scrolling > li > a:hover{
   position:relative;
   vertical-align: middle;
   color: white;
-    background: rgba(0, 0, 0, 0.3);
   display: inline-block;
   height: 60px; 
   line-height: 60px;
@@ -303,7 +301,6 @@ ul.menu-scrolling > li > a:hover{
 .box:hover {
   border: 2px solid rgba(0,160,80,0);
   color: #FFF;
-    background: rgba(62, 62, 62, 0.81);
 }
 
 .box::before, .box::after {
@@ -653,9 +650,12 @@ ul.slidesjs-pagination > .slidesjs-pagination-item:hover{
 }
 
 .search-btn:hover{
-    background: #0e4b80!important;
+    background: #0e4b80;
 }
-
+.search-field{
+    font-weight: 100 !important;
+    color: #ABADB3 !important;
+}
 /*No hay resultados*/
 .none_results{
     width: 100%;
