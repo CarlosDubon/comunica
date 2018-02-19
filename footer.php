@@ -69,7 +69,7 @@ $(function(){
           // [number] Speed in milliseconds of the slide animation.
       },
       fade: {
-        speed: 300,
+        speed: 500,
           // [number] Speed in milliseconds of the fade animation.
         crossfade: true
           // [boolean] Cross-fade the transition.
