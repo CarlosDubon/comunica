@@ -120,6 +120,7 @@ if ( have_posts() ) {
                                   }
                                 ?>
                               <div class="card-body text-dark w-sr" id="style-7">
+                                <h2><?php the_title() ?> </h2>
                                 <p class="card-text"><?php the_excerpt(); ?></p>
                                 <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Leer Más</a>
                               </div>
@@ -138,6 +139,7 @@ if ( have_posts() ) {
                                       }
                                     ?>
                                   <div class="card-body text-dark w-sr" id="style-7">
+                                   <h2><?php the_title() ?> </h2>
                                     <p class="card-text"><?php the_excerpt(); ?></p>
                                     <a href="<?php the_permalink();?>" class="btn btn-outline-primary">Leer más</a>
                                   </div>
