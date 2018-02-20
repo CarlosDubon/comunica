@@ -76,11 +76,11 @@ $(function(){
       }
     },
     play:{
-        interval: 5000,
+        interval: 10000,
         auto:true,
         effect: "fade",
         pauseOnHover: true,
-        restartDelay: 2500
+        restartDelay: 5000
     },
 
   });
